@@ -18,6 +18,10 @@ socket.on('disconnect', ()=> {
     lblOnline.style.display= 'none';
 });
 
+socket.on('enviar-mensaje', ( payload )=> {
+    console.log(payload);
+});
+
 btnEnviar.addEventListener('click', ()=> {
     const mensaje= txtMensaje.value;
 
